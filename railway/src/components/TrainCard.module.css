@@ -1,0 +1,186 @@
+.card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+.card:hover {
+  border-color: #e8a020;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(232, 160, 32, 0.12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 1rem;
+  color: #e8a020;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.type {
+  font-size: 0.72rem;
+  color: #8888aa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #12122a;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #2a2a4a;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.station {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 80px;
+}
+
+.stationRight {
+  align-items: flex-end;
+}
+
+.time {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0f0f8;
+  line-height: 1;
+}
+
+.city {
+  font-size: 0.9rem;
+  color: #ccccee;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #6666aa;
+}
+
+.line {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.duration {
+  font-size: 0.72rem;
+  color: #8888aa;
+  white-space: nowrap;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e8a020;
+  flex-shrink: 0;
+}
+
+.dash {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, #e8a020, #3a3a6a);
+}
+
+.arrow {
+  color: #3a3a6a;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-left: -4px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.wagons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.wagonBadge {
+  font-size: 0.7rem;
+  color: #7777bb;
+  background: #12122a;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.btn {
+  background: #e8a020;
+  color: #0d0d1f;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: #f5b830;
+  transform: scale(1.03);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 16px;
+  }
+
+  .time {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
