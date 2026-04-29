@@ -1,0 +1,108 @@
+.form {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666aa;
+  margin-bottom: 2px;
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: #6666aa;
+  font-style: italic;
+}
+
+.seatsInfo {
+  font-size: 0.82rem;
+  color: #8888bb;
+}
+
+.seatsList {
+  font-family: "JetBrains Mono", monospace;
+  color: #5599ff;
+  font-weight: 700;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #7777aa;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.input {
+  background: #12122a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 11px 14px;
+  color: #f0f0f8;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input::placeholder {
+  color: #3d3d6a;
+}
+
+.input:focus {
+  border-color: #5555aa;
+}
+
+.inputError {
+  border-color: rgba(239, 68, 68, 0.6);
+}
+
+.inputError:focus {
+  border-color: #ef4444;
+}
+
+.error {
+  font-size: 0.72rem;
+  color: #f87171;
+}
+
+.btn {
+  background: #e8a020;
+  color: #0d0d1f;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 4px;
+}
+
+.btn:hover:not(:disabled) {
+  background: #f5b830;
+  transform: translateY(-1px);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
